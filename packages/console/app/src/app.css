@@ -1,1 +1,15 @@
 @import "./style/index.css";
+
+[data-component="voice-widget-container"] {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 9999;
+}
+
+@media (max-width: 768px) {
+  [data-component="voice-widget-container"] {
+    bottom: 16px;
+    right: 16px;
+  }
+}
